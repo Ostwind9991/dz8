@@ -8,5 +8,63 @@ body {
 
 .content {
     margin-left: 169px;
-
 }
+
+.header_menu {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.header_menu__search {
+    background: url("../upload/Serch.svg") no-repeat 22px/18px;
+    padding: 24px 0 23px 50px;
+    border-right: solid 1px #EEEEEE;
+    flex: 1 1 349px;
+}
+
+.header_menu__search span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.5;
+}
+
+.header_menu__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 87px;
+    border-right: solid 1px #EEEEEE;
+    flex: 0 0 87px;
+}
+
+.header_menu__avatar {
+    flex: 0 0 246px;
+    background: url("../upload/Pro Pic.png") no-repeat 23px/39px;
+}
+
+.header_menu__avatar__title {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 16px 0 0 71px;
+}
+
+.header_menu__avatar__subtitle {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #3E2AD1;
+    margin: 0 0 17px 77px;
+}
+
+.header_menu__avatar__subtitle::before {
+    content: url("../upload/Crown.svg");
+    position: relative;
+    right: 5px;
+}
+
+.banner {
+    background: url("../upload/Rectangle.jpg") no-repeat center/cover;
+}
+

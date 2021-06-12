@@ -1,5 +1,6 @@
 
 .aside_menu {
+
     position: absolute;
     top: 0;
     bottom: 0;
@@ -10,10 +11,10 @@
     line-height: 16px;
     font-weight: 500;
     width: 169px;
+    border: solid 1px #EEEEEE;
 }
 .menu_wrapper {
     padding: 23px 20px 0 25px;
-    box-sizing: border-box;
 }
 
 .menu_logo {
@@ -61,7 +62,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    box-sizing: border-box;
     background-color: #F51E38;
     padding: 12px 17px 10px 24px;
 }
