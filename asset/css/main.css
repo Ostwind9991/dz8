@@ -66,5 +66,55 @@ body {
 
 .banner {
     background: url("../upload/Rectangle.jpg") no-repeat center/cover;
+    padding: 92px 0 0 53px;
+    color: #ffffff;
 }
 
+.banner_pretitle {
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.banner_title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    margin: 7px 0;
+}
+
+.banner_subtitle {
+    font-size: 16px;
+    line-height: 14px;
+    margin-bottom: 43px;
+}
+
+.banner_button {
+    font-size: 10px;
+    line-height: 14px;
+    color: #E6152B;
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px 0 rgba(188, 20, 40, 1);
+    border-radius: 3px;
+    border: none;
+    padding: 4px 16px 4px 15px;
+    font-family: Source Sans Pro, sans-serif;
+}
+
+.banner_button::after {
+    content: url("../upload/Play.svg");
+    position: relative;
+    top: 1px;
+    left: 4px;
+}
+
+.banner_nex_button {
+    font-family: Source Sans Pro, sans-serif;
+    box-shadow: 0 2px 8px 0 rgba(188, 20, 40, 1);
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+}
+
+.banner_nex_button img {
+    display: block;
+}
