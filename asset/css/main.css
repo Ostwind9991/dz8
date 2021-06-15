@@ -65,9 +65,11 @@ body {
 }
 
 .banner {
-    background: url("../upload/Rectangle.jpg") no-repeat center/cover;
+    position: relative;
+    background: url("../upload/Rectangle.jpg") no-repeat center/cover #e21325;
     padding: 92px 0 0 53px;
     color: #ffffff;
+    overflow: auto;
 }
 
 .banner_pretitle {
@@ -98,6 +100,12 @@ body {
     border: none;
     padding: 4px 16px 4px 15px;
     font-family: Source Sans Pro, sans-serif;
+    margin-right:8px;
+}
+
+.banner_button_wrapper {
+    margin-bottom: 48px;
+    display: flex;
 }
 
 .banner_button::after {
@@ -117,4 +125,145 @@ body {
 
 .banner_nex_button img {
     display: block;
+}
+
+.banner_slider_indicators {
+    position: absolute;
+    display: flex;
+    bottom: 9px;
+    left: calc(50% - 40px);
+}
+
+.banner_slider_indicators li {
+    width: 16px;
+    height: 5px;
+    margin-right: 5px;
+    -webkit-transform: skew(340deg);
+    -moz-transform: skew(340deg);
+    -o-transform: skew(340deg);
+    transform: skew(340deg);
+    background-color: #fff;
+}
+
+.banner_slider_indicators li:nth-child(2) {
+    background-color: #3E2AD1;
+}
+
+.medea {
+    padding: 23px 0 0 23px;
+}
+
+.medea_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 13px;
+}
+
+.medea_FeaturedTracks {
+    display: flex;
+/*overflow: scroll;*/
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+/*.medea_FeaturedTracks::-webkit-scrollbar {*/
+/*    width: 0;*/
+/*    background: rgba(255, 255, 255, 0.0);*/
+/*}*/
+
+.medea_FeaturedTracks__track:not(:last-child) {
+    margin-right: 20px;
+}
+.medea_FeaturedTracks__title {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #0F1E36;
+    margin: 8px 0 4px 0;
+}
+.medea_FeaturedTracks__subtitle {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #0F1E36;
+    opacity: 50%
+}
+
+.medea_TopTracks__titles {
+    display: flex;
+}
+
+.medea_TopTracks__titles span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #0F1E36;
+}
+
+.medea_TopTracks__titles span:nth-child(1) {
+    flex: 1 0 166px;
+}
+
+.medea_TopTracks__titles span:nth-child(2) {
+    flex: 1 0 142px;
+}
+
+.medea_TopTracks__titles span:nth-child(3) {
+    flex: 1 0 167px;
+}
+
+.medea_TopTracks__titles span:nth-child(4) {
+    flex: 1 0 106px;
+}
+
+.medea_TopTracks__titles span:nth-child(5) {
+    flex: 1 0 82px;
+}
+
+.medea_TopTracks__titles span:nth-child(6) {
+    flex: 1 0 171px;
+}
+
+
+.medea_TopTracks__songs {
+    display: flex;
+}
+
+.medea_TopTracks__songs span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #0F1E36;
+    opacity: 50%;
+}
+
+.medea_TopTracks__songs span:nth-child(1) {
+    flex: 1 0 68px;
+}
+.medea_TopTracks__songs a:nth-child(2) {
+    flex: 1 0 93px;
+    width: 15px;
+}
+
+.medea_TopTracks__songs span:nth-child(3) {
+    flex: 1 0 112px;
+}
+
+.medea_TopTracks__songs span:nth-child(4) {
+    flex: 1 0 167px;
+}
+
+.medea_TopTracks__songs span:nth-child(5) {
+    flex: 1 0 106px;
+}
+
+.medea_TopTracks__songs span:nth-child(6) {
+    flex: 1 0 87px;
+}
+
+.medea_TopTracks__songs a:nth-child(7) {
+    flex: 1 0 47px;
+}
+.medea_TopTracks__songs a:nth-child(8) {
+    flex: 1 0 60px;
 }
