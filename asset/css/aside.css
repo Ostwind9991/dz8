@@ -1,0 +1,89 @@
+
+.aside_menu {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    width: 169px;
+    border: solid 1px #EEEEEE;
+}
+.menu_wrapper {
+    padding: 23px 20px 0 25px;
+}
+
+.menu_logo {
+    padding-bottom: 43px;
+}
+
+.menu li {
+    position: relative;
+    padding: 0 0 24px 25px;
+    color: #0F1E36;
+    opacity: 50%;
+}
+.menu li:hover {
+    color: #3E2AD1;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.menu li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hover li:nth-child(1) {
+    color: #3E2AD1;
+    opacity: 1;
+}
+
+.menu_title {
+    color:#0F1E36;
+    padding-bottom: 16px;
+}
+.menu_titlePlaylist {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+.menu_titlePlaylist .menu_title{
+    padding-bottom: 0;
+}
+
+.menu_album {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F51E38;
+    padding: 12px 17px 10px 24px;
+}
+
+.menu_album img {
+    position: absolute;
+}
+
+.menu_album .burger {
+    top: 8px;
+    right: 12px;
+}
+
+.menu_album_nameArtist {
+    color: #ffffff;
+    line-height: 12px;
+    padding-left: 48px;
+}
+
+.menu_album_nameSong {
+    color:#F69DA8;
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 48px;
+}
