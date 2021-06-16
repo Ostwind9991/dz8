@@ -11,10 +11,10 @@
     line-height: 16px;
     font-weight: 500;
     width: 169px;
-    border: solid 1px #EEEEEE;
 }
 .menu_wrapper {
     padding: 23px 20px 0 25px;
+    border: solid 1px #EEEEEE;
 }
 
 .menu_logo {
@@ -63,7 +63,7 @@
     left: 0;
     right: 0;
     background-color: #F51E38;
-    padding: 12px 17px 10px 24px;
+    padding: 14px 15px 14px 24px;
 }
 
 .menu_album img {
