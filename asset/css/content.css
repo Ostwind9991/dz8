@@ -1,0 +1,12 @@
+@import "content_wrapper.css";
+@import "player.css";
+.content {
+    margin-left: 169px;
+    position: relative;
+}
+
+@media (max-width:414px) {
+    .content {
+        margin: 0;
+    }
+}

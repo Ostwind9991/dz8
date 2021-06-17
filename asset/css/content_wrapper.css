@@ -1,0 +1,18 @@
+@import "header_menu.css";
+@import "banner.css";
+@import "medea.css";
+
+
+.content_wrapper {
+    overflow: scroll;
+    height: 100vh;
+    background: linear-gradient(
+            180deg
+            , rgba(244, 249, 255, 0.0001) 0%, #F4F9FF 26.23%);
+
+}
+
+.content_wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
