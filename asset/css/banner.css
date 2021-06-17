@@ -83,3 +83,26 @@
 .banner_slider_indicators li:nth-child(2) {
     background-color: #3E2AD1;
 }
+
+@media (min-width:415px) {
+    .mobil_menu_banner {
+        display: none;
+    }
+}
+
+@media (max-width:414px) {
+    .mobil_menu_banner {
+        display: inline-block;
+        position: absolute;
+        top: 58px;
+        left: 32px;
+    }
+
+    .banner {
+        padding-left: 32px;
+    }
+
+    .banner_slider_indicators {
+        display: none;
+    }
+}

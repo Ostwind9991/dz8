@@ -14,15 +14,16 @@
 
 .medea_FeaturedTracks {
     display: flex;
-    /*overflow: scroll;*/
+    overflow-y: scroll;
     justify-content: space-between;
     margin-bottom: 23px;
 }
 
-/*.medea_FeaturedTracks::-webkit-scrollbar {*/
-/*    width: 0;*/
-/*    background: rgba(255, 255, 255, 0.0);*/
-/*}*/
+.medea_FeaturedTracks::-webkit-scrollbar {
+    width: 0;
+    height:0;
+}
+
 
 .medea_FeaturedTracks__track:not(:last-child) {
     margin-right: 20px;
@@ -165,3 +166,79 @@
 .medea_TopTracks__songs div:nth-child(9) {
     flex: 1 0 37px;
 }
+
+@media (max-width:414px) {
+    .img_play {
+        display: none;
+    }
+
+    .medea_TopTracks__songs div {
+        display: none;
+    }
+
+    .medea_TopTracks__titles {
+        display: none;
+    }
+
+    .medea_TopTracks__songs div:nth-child(1) {
+        display: block;
+
+    }
+    .medea_TopTracks__songs div:nth-child(3) {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .medea_TopTracks__songs div:nth-child(6) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .medea_TopTracks__songs div:nth-child(1) span {
+        display: none;
+    }
+
+    .medea_TopTracks__songs div  p:first-child {
+        font-family: Roboto, serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.203259px;
+    }
+
+    .medea_TopTracks__songs div  p:nth-child(2) {
+        font-family: Roboto, serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: -0.174222px;
+        color: #545663;
+    }
+
+    .medea_TopTracks_wrapper .medea_TopTracks__songs:nth-child(2) {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .medea_TopTracks__songs div:nth-child(1) {
+        padding: 0;
+    }
+
+    .medea_TopTracks__songs div {
+        margin: 14px 0;
+    }
+}
+@media (min-width:415px) {
+    .medea_TopTracks__songs div .img_mob {
+        display: none;
+    }
+
+    .span_mob {
+        display: none;
+    }
+}
+
