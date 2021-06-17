@@ -4,10 +4,24 @@
 
 body {
     font-family: Source Sans Pro, sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .content {
     margin-left: 169px;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content_wrapper {
+    overflow: scroll;
+    height: 100vh;
+}
+
+.content_wrapper::-webkit-scrollbar {
+    width: 0;
 }
 
 .header_menu {
@@ -100,7 +114,7 @@ body {
     border: none;
     padding: 4px 16px 4px 15px;
     font-family: Source Sans Pro, sans-serif;
-    margin-right:8px;
+    margin-right: 8px;
 }
 
 .banner_button_wrapper {
@@ -151,6 +165,8 @@ body {
 
 .medea {
     padding: 23px 0 0 23px;
+    background: linear-gradient(180deg, rgba(244, 249, 255, 0.0001) 0%, #F4F9FF 26.23%);
+
 }
 
 .medea_title {
@@ -162,10 +178,11 @@ body {
 
 .medea_FeaturedTracks {
     display: flex;
-/*overflow: scroll;*/
+    /*overflow: scroll;*/
     justify-content: space-between;
     margin-bottom: 23px;
 }
+
 /*.medea_FeaturedTracks::-webkit-scrollbar {*/
 /*    width: 0;*/
 /*    background: rgba(255, 255, 255, 0.0);*/
@@ -174,6 +191,7 @@ body {
 .medea_FeaturedTracks__track:not(:last-child) {
     margin-right: 20px;
 }
+
 .medea_FeaturedTracks__title {
     font-size: 12px;
     line-height: 16px;
@@ -181,12 +199,32 @@ body {
     color: #0F1E36;
     margin: 8px 0 4px 0;
 }
+
 .medea_FeaturedTracks__subtitle {
     font-size: 10px;
     line-height: 14px;
     font-weight: 400;
     color: #0F1E36;
     opacity: 50%
+}
+
+.medea_TopTracks {
+    margin-right: 27px;
+}
+
+.medea_TopTracks_wrapper {
+    max-height: 180px;
+    overflow-y: scroll;
+}
+
+.medea_TopTracks_wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.medea_TopTracks_wrapper .medea_TopTracks__songs:nth-child(2) {
+    background: #FFFFFF;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
 
 .medea_TopTracks__titles {
@@ -198,37 +236,46 @@ body {
     font-weight: 400;
     line-height: 16px;
     color: #0F1E36;
-    flex: 0 0 100px;
+    margin-bottom: 21px;
+    /*flex: 1 0 50px;*/
 }
 
-/*.medea_TopTracks__titles p:nth-child(1) {*/
-/*    flex: 1 0 166px;*/
-/*}*/
+.medea_TopTracks__titles div:nth-child(1) {
+    flex: 0 0 68px;
+    padding-left: 16px;
+}
 
-/*.medea_TopTracks__titles div:nth-child(2) {*/
-/*    flex: 1 0 93px;*/
-/*}*/
+.medea_TopTracks__titles div:nth-child(2) {
+    flex: 1 0 93px;
+}
 
-/*.medea_TopTracks__titles p:nth-child(3) {*/
-/*    flex: 1 0 142px;*/
-/*}*/
+.medea_TopTracks__titles div:nth-child(3) {
+    flex: 4 0 112px;
+}
 
-/*.medea_TopTracks__titles p:nth-child(4) {*/
-/*    flex: 1 0 167px;*/
-/*}*/
+.medea_TopTracks__titles div:nth-child(4) {
+    flex: 4 0 167px;
+}
 
-/*.medea_TopTracks__titles p:nth-child(5) {*/
-/*    flex: 1 0 106px;*/
-/*}*/
+.medea_TopTracks__titles div:nth-child(5) {
+    flex: 3 0 106px;
+}
 
-/*.medea_TopTracks__titles p:nth-child(6) {*/
-/*    flex: 1 0 82px;*/
-/*}*/
+.medea_TopTracks__titles div:nth-child(6) {
+    flex: 3 0 87px;
+}
 
-/*.medea_TopTracks__titles p:nth-child(7) {*/
-/*    flex: 1 0 171px;*/
-/*}*/
+.medea_TopTracks__titles div:nth-child(7) {
+    flex: 0 0 47px;
+}
 
+.medea_TopTracks__titles div:nth-child(8) {
+    flex: 0 0 60px;
+}
+
+.medea_TopTracks__titles div:nth-child(9) {
+    flex: 1 0 37px;
+}
 
 .medea_TopTracks__songs {
     display: flex;
@@ -240,37 +287,154 @@ body {
     line-height: 16px;
     color: #0F1E36;
     opacity: 50%;
-    flex: 0 0 100px;
+    margin: 23px 0;
+    /*flex: 1 0 50px;*/
 
 }
 
-/*.medea_TopTracks__songs span:nth-child(1) {*/
-/*    flex: 1 0 68px;*/
-/*}*/
-/*.medea_TopTracks__songs a:nth-child(2) {*/
-/*    flex: 1 0 93px;*/
-/*    width: 15px;*/
+.medea_TopTracks__songs div:nth-child(1) {
+    flex: 0 0 68px;
+    padding-left: 16px;
+}
+
+.medea_TopTracks__songs div:nth-child(2) {
+    flex: 1 0 93px;
+    width: 15px;
+}
+
+.medea_TopTracks__songs div:nth-child(3) {
+    flex: 4 0 112px;
+}
+
+.medea_TopTracks__songs div:nth-child(4) {
+    flex: 4 0 167px;
+}
+
+.medea_TopTracks__songs div:nth-child(5) {
+    flex: 3 0 106px;
+}
+
+.medea_TopTracks__songs div:nth-child(6) {
+    flex: 3 0 87px;
+}
+
+.medea_TopTracks__songs div:nth-child(7) {
+    flex: 0 0 47px;
+}
+
+.medea_TopTracks__songs div:nth-child(8) {
+    flex: 0 0 60px;
+}
+
+.medea_TopTracks__songs div:nth-child(9) {
+    flex: 1 0 37px;
+}
+
+.player {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0F1E36;
+    display: flex;
+    padding: 24px 29px 24px 23px;
+}
+
+.player div:nth-child(3) {
+    flex: 5 0 200px;
+    display: flex;
+    justify-content: space-between
+}
+
+.player div:last-child {
+    flex: 0 0 100px;
+    margin-left:63px;
+}
+
+.player_options img:first-child {
+    margin-right:32px;
+}
+
+.player_pause img:nth-child(3) {
+    margin-right:  43px;
+}
+
+
+.player_pause::before {
+    content: "";
+    position: absolute;
+    top: -60%;
+    right: 51%;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background: rgba(245, 30, 56, 0.3);
+}
+.player_pause::after {
+    content: "";
+    position: absolute;
+    top: -90%;
+    right: 49.3%;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: rgba(245, 30, 56, 0.3);
+}
+
+.player_tracks {
+    position: relative;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.player_tracks::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 85%;
+    right: 8%;
+    top: 45%;
+    height: 4px;
+    background-color: #FFFFFF;
+}
+
+.player_tracks::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 45%;
+    left: 7%;
+    top: 45%;
+    height: 4px;
+    background-color: #F51E38;
+}
+
+.player_louder img:first-child {
+    margin-right: 35px;
+}
+
+.players {
+    flex: 1 0 100px;
+}
+
+.player_pause {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.player_pause::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    width: 36px;*/
+/*    height: 36px;*/
+/*    border-radius: 100%;*/
+/*    background: rgba(245, 30, 56, 0.3);*/
 /*}*/
 
-/*.medea_TopTracks__songs span:nth-child(3) {*/
-/*    flex: 1 0 112px;*/
-/*}*/
-
-/*.medea_TopTracks__songs span:nth-child(4) {*/
-/*    flex: 1 0 167px;*/
-/*}*/
-
-/*.medea_TopTracks__songs span:nth-child(5) {*/
-/*    flex: 1 0 106px;*/
-/*}*/
-
-/*.medea_TopTracks__songs span:nth-child(6) {*/
-/*    flex: 1 0 87px;*/
-/*}*/
-
-/*.medea_TopTracks__songs a:nth-child(7) {*/
-/*    flex: 1 0 47px;*/
-/*}*/
-/*.medea_TopTracks__songs a:nth-child(8) {*/
-/*    flex: 1 0 60px;*/
-/*}*/
