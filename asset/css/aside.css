@@ -15,6 +15,10 @@
 .menu_wrapper {
     padding: 23px 20px 0 25px;
     border: solid 1px #EEEEEE;
+    overflow: scroll;
+}
+.menu_wrapper::-webkit-scrollbar {
+    width: 0;
 }
 
 .menu_logo {

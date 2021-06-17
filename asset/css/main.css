@@ -4,12 +4,24 @@
 
 body {
     font-family: Source Sans Pro, sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .content {
     margin-left: 169px;
     position: relative;
     height: 100vh;
+    overflow: hidden;
+}
+
+.content_wrapper {
+    overflow: scroll;
+    height: 100vh;
+}
+
+.content_wrapper::-webkit-scrollbar {
+    width: 0;
 }
 
 .header_menu {
@@ -205,6 +217,10 @@ body {
     overflow-y: scroll;
 }
 
+.medea_TopTracks_wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
 .medea_TopTracks_wrapper .medea_TopTracks__songs:nth-child(2) {
     background: #FFFFFF;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -339,8 +355,32 @@ body {
     margin-right:32px;
 }
 
-.player_pause img:nth-child(2) {
-    padding: 0 41px;
+.player_pause img:nth-child(3) {
+    margin-right:  43px;
+}
+
+
+.player_pause::before {
+    content: "";
+    position: absolute;
+    top: -60%;
+    right: 51%;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background: rgba(245, 30, 56, 0.3);
+}
+.player_pause::after {
+    content: "";
+    position: absolute;
+    top: -90%;
+    right: 49.3%;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: rgba(245, 30, 56, 0.3);
 }
 
 .player_tracks {
@@ -384,15 +424,17 @@ body {
 
 .player_pause {
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
-.player_pause::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 36px;
-    height: 36px;
-    border-radius: 100%;
-    background: rgba(245, 30, 56, 0.3);
-}
+/*.player_pause::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    width: 36px;*/
+/*    height: 36px;*/
+/*    border-radius: 100%;*/
+/*    background: rgba(245, 30, 56, 0.3);*/
+/*}*/
 
