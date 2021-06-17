@@ -91,3 +91,9 @@
     line-height: 12px;
     padding-left: 48px;
 }
+
+@media (max-width:414px) {
+    .aside_menu {
+        display: none;
+    }
+}

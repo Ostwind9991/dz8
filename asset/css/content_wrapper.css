@@ -1,0 +1,13 @@
+@import "header_menu.css";
+@import "banner.css";
+@import "medea.css";
+
+
+.content_wrapper {
+    overflow: scroll;
+    height: 100vh;
+}
+
+.content_wrapper::-webkit-scrollbar {
+    width: 0;
+}
