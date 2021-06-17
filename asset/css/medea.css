@@ -231,6 +231,23 @@
     .medea_TopTracks__songs div {
         margin: 14px 0;
     }
+
+    .panel_mob {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        background: url("../upload/Rectanglemob.png") no-repeat bottom/100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 8%;
+    }
+
+    .panel_mob div:nth-child(3) img {
+        margin-bottom: 10px;
+        width: 16.5vw;
+    }
 }
 @media (min-width:415px) {
     .medea_TopTracks__songs div .img_mob {
@@ -238,6 +255,10 @@
     }
 
     .span_mob {
+        display: none;
+    }
+
+    .panel_mob {
         display: none;
     }
 }

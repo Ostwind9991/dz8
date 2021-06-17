@@ -6,6 +6,8 @@
 .content_wrapper {
     overflow: scroll;
     height: 100vh;
+    margin-bottom: 62px;
+
 }
 
 .content_wrapper::-webkit-scrollbar {
